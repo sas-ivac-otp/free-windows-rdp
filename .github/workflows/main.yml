@@ -1,10 +1,11 @@
 name: Secure Windows RDP
 
-on: workflow_dispatch:
+on:
+  workflow_dispatch:
 
-jobs: secure-rdp: runs-on: windows-latest
-
-    # GitHub-hosted runner jobs have a maximum execution limit of 360 minutes.
+jobs:
+  secure-rdp:
+    runs-on: windows-latest
     timeout-minutes: 350
 
     steps:
